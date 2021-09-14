@@ -1,10 +1,7 @@
 ﻿using ATBiotechTest.Dtos;
 using ATBiotechTest.Services.Database.Interfaces;
 using ATBiotechTest.Services.Interfaces;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace ATBiotechTest.Services
 {
@@ -27,7 +24,7 @@ namespace ATBiotechTest.Services
             return _contactsRepository.GetContacts(query);
         }
 
-        public void Update(ContactDto input,long id)
+        public void Update(ContactDto input, long id)
         {
             _contactsRepository.UpdateContacts(input, id);
         }

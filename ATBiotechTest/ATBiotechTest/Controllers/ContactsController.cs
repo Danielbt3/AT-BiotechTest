@@ -5,8 +5,6 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace ATBiotechTest.Controllers
 {
@@ -65,7 +63,7 @@ namespace ATBiotechTest.Controllers
             try
             {
                 ContactQueryDto tempQuery = new ContactQueryDto();
-                tempQuery.Id = id;tempQuery.maxItemsPerPage = 1;
+                tempQuery.Id = id; tempQuery.maxItemsPerPage = 1;
                 _logger.LogInformation("START Get IP: " + Utilities.GetIpValue(Request));
                 var res = _contactsService.Get(tempQuery);
                 _logger.LogInformation("END Get IP: " + Utilities.GetIpValue(Request));
@@ -84,7 +82,7 @@ namespace ATBiotechTest.Controllers
             try
             {
                 _logger.LogInformation("START Update IP: " + Utilities.GetIpValue(Request));
-                _contactsService.Update(input,id);
+                _contactsService.Update(input, id);
                 _logger.LogInformation("END Update IP: " + Utilities.GetIpValue(Request));
                 return Ok();
             }

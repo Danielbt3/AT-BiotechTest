@@ -1,14 +1,11 @@
 ﻿using ATBiotechTest.Dtos;
 using ATBiotechTest.Services.Database.Interfaces;
-using System;
 using System.Collections.Generic;
 using System.Data.SQLite;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace ATBiotechTest.Services.Database
 {
-    public class ContactsRepository : SQLiteService,IContactsRepository
+    public class ContactsRepository : SQLiteService, IContactsRepository
     {
         private string tableName = "contacts";
         public string TableName { get { return tableName; } }
@@ -44,7 +41,7 @@ namespace ATBiotechTest.Services.Database
             List<ContactDto> resuls = new List<ContactDto>();
             while (reader.Read())
             {
-                resuls.Add(new ContactDto((long)reader["id"],(string)reader["name"],(string)reader["address"]));
+                resuls.Add(new ContactDto((long)reader["id"], (string)reader["name"], (string)reader["address"]));
             }
             m_dbConnection.Close();
             return resuls;

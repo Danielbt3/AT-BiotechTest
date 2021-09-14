@@ -1,10 +1,5 @@
-﻿using ATBiotechTest.Services.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Data.SQLite;
+﻿using System.Data.SQLite;
 using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace ATBiotechTest.Services.Database
 {

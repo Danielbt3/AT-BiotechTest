@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace ATBiotechTest.Dtos
+﻿namespace ATBiotechTest.Dtos
 {
     public class ContactDto
     {
@@ -11,7 +6,7 @@ namespace ATBiotechTest.Dtos
         public string Name { get; set; }
         public string Address { get; set; }
         public ContactDto() { }
-        public ContactDto(long Id,string Name,string Address)
+        public ContactDto(long Id, string Name, string Address)
         {
             this.Id = Id;
             this.Name = Name;
