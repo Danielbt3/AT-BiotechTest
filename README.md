@@ -7,6 +7,7 @@ Para iniciar el proyecto tan solo habra que abrirlo en visual studio y iniciar A
 A partir de aqui ya se podrian empezar a realizar llamadas , ya sea por API o usando el propio swagger
 
 Notas:
+
 -Se ha extraido la inyeccion de dependencias a una clase container para encontrarla mas facilmente
 
 -Se eligio SQLite como base de datos ya que es un formato sencillo de SQL que permite ejecutar este test rapidamente y sin migraciones previas, en situaciones normales
